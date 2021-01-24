@@ -12,6 +12,8 @@
     <a href="index.html" class="w3-button w3-bar-item">Home</a>
     <a href="about.html" class="w3-button w3-bar-item">About</a>
 </nav>
+    
+ /*Contact Us*/
 <style>   
   * {
   box-sizing: border-box;
@@ -50,6 +52,36 @@
        clear: both;
        display: table;
     }
+  
+  /*Contact us Form*/
+  /*style inputs with text*/
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding:12px; /* Some padding */
+    border:1px solid light blue; /* blue border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing:border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /*styling the send button with a background*/
+  input[type=submit] {
+    background-color: #ccc;
+    color:black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /*background color and padding*/
+  .contactForm{
+    border-radius: 5px;
+    background-color: light blue;
+    padding: 20px;
+  }
   </head>
     </style>
     
@@ -57,24 +89,24 @@
    
   <! Header>
   <div class="w3-display-container">
-    <img src="images/AdobeStock_315974797.jpeg" alt="graduates" style="width:100%; min-height:350px;max-height:500px; style="float:left""> 
+    <img src="images/AdobeStock_315974797.jpeg" alt="graduates" style="width:100%; min-height:350px;max-height:600px; style="float:left""> 
   </div>
 
     <section class="w3-container w3-center w3-content" style="max-width:600px id="team">
                  <h2 class="w3-wide">ABOUT</h2>
                   
-                  <p class="w3-justify">Colleges students have always struggled to pay 
+                  <p class="w3-justify" style="font-size:1.5em>Colleges students have always struggled to pay 
                                        for their education. Financial aid has always been needed, 
                                        but not everyone has a chance to earn funding. Through partnering with
                                        QVC, viewers will be able to quickly and accessibly donate
                                        to the college of choosing. Through 30 - 40 sec long ads,
                                        viewers will scan the code or search the link to our website
-                                       sending them to donation site for that college. With your help, we can
-                                       reduce the amount debt students gain through trying to bettr themselves 
-                                       in a society driven by work. To help those in need, please 
+                                       sending them to our donation site for that college. With your help, we can
+                                       reduce the amount of debt students gain through trying to better themselves 
+                                       through college. To help those in need, please 
                                        donate and spread the word!</p>
     </section>
-                                       
+             <br>                          
     <!-The Team->
     <div class="w3-container s3-padding-64 w3-center" id=team">
       <h2 class="w3-wide">THE TEAM</h2>
@@ -86,8 +118,8 @@
         <img src="images/Tori.jpg" alt="Tori W" style="width:50%" class="w3-circle">
       </div>
       <div class="column">
-         <h3>Tori</h3>
-         <p>Coordinator/Web Designer</p>
+         <h2>Tori</h2>
+         <h3>Coordinator/Web Designer</h3>
       </div>
    </div>
     
@@ -96,8 +128,8 @@
               <img src="images/khailen.JPG" alt="Khalien C" style="width:50%" class="w3-circle">
          </div>
          <div class="column">
-           <h3>Khalien</h3>              
-           <p>Web Designer/Support</p>
+           <h2>Khalien</h2>              
+           <h3>Web Designer/Support</h3>
          </div>
     </div>
                                                                                      
@@ -106,8 +138,8 @@
            <img src="images/Angelica.JPG" alt="Angelica T" style="width:50%" class="w3-circle">
         </div>
         <div class="column">
-          <h3>Angelica</h3>
-          <p>Researcher/Writer/Programmer</p>
+          <h2>Angelica</h2>
+          <h3>Researcher/Writer/Programmer</h3>
         </div>
    </div>
    <div class="row4">
@@ -115,19 +147,44 @@
              <img src="images/Taylor.JPG" alt="Taylor W" style="width:50%" class="w3-circle">
         </div>
         <div class="column">
-          <h3>Taylor</h3>
-          <p>Spokesperson/Writer</p>
+          <h2>Taylor</h2>
+          <h3>Spokesperson/Writer</h3>
         </div>
    </div>
-    
-    <!-- Contact Container -->
+  
+  <br>
+ 
 
-      
-       <! -- Footer>
+<!-- Contact -->
+<div id="contact" class="w3-container w3-center w3-padding-32">
+
+<h2 class="w3-wide">CONTACT US</h2>
+TX, USA<br>
+Email: shopacollege@gmail.com<br>
+<div class="contactForm">
+                        <!---NEED TO LOOK OVER PHP CODE--->
+                        <!---Forms process the input>
+     <form action="action_page.php">
+           <! --- labels are inputs for each field>                        
+           <label for="firstName">First name</label>
+           <input type="text"  id="firstName" name="firstName" placeholder="First Name">
+           
+           <label for="lastName">Last name</label>
+           <input type="text"  id="lastName" name="lastName" placeholder="Last Name">                                                                            
+            
+           <label for="Message">Message</label>
+           <textarea id="message" name="message" placeholder="Would you like to be a part of the donation process? Write here!" 
+             style="height:100px"></textarea>    
+           <input type="send" value="Send"> 
+     </form>
+</div>
+<br>
+                                                                                                                               <! -- Footer>
             <footer class="w3-container w3-padding-664 s3-center w3-black w3-xlarge">
               <a href="index.html"><i class="fa fa-home"></i></a>
                     <p class="w3-medium">
                            Using designs from <a href=https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
     </p>
+</div>
   </body>
  </html>                                                                               </html>
