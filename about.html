@@ -11,39 +11,37 @@
     <a href="index.html" class="w3-button w3-bar-item">Home</a>
     <a href="about.html" class="w3-button w3-bar-item">About</a>
 </nav>
-<style>    
+<style>   
+  nav.relative {
+      position: sticky;
+  }
+  </nav>
     .column{
-       float: left;
-       width: 50%;
-       padding: 5px;
+      float: left;
+      position: relative;
+       left: 0;
+       width: 33.3%;
+       
     }
     
-    .row1::after {
-       content: "Researcher";
-       background-color: light gray;
-       color: black;
-       font-weight: bold;
+    .row1 {
+       position: static;
+      left: 0;
     }
     
-    .row2::after {
-       content: "Khailen C.";
-       background-color: light gray;
-       color: black;
-       font-weight: bold;
+    .row2 {
+       position: static;
+      left: 0;
     }
     
-    .row3::after {
-       content: "Taylor W.";
-       background-color: light gray;
-       color: black;
-       font-weight: bold;
+    .row3{
+       position: static;
+      left: 0;
     }
     
-    .row4::after {
-       content: "Tori W.";
-       background-color: light gray;
-       color: black;
-       font-weight: bold;
+    .row4{
+       position: static;
+      left: 0;
     }
   </head>
     </style>
