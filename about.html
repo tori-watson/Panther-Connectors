@@ -11,6 +11,40 @@
     <a href="index.html" class="w3-button w3-bar-item">Home</a>
     <a href="about.html" class="w3-button w3-bar-item">About</a>
 </nav>
+    
+    .column{
+       float: left;
+       width: 50%;
+       padding: 5px;
+    }
+    
+    .row1::after {
+       content: "Researcher";
+       background-color: light gray;
+       color: black;
+       font-weight: bold;
+    }
+    
+    .row2::after {
+       content: "Khailen C.";
+       background-color: light gray;
+       color: black;
+       font-weight: bold;
+    }
+    
+    .row3::after {
+       content: "Taylor W.";
+       background-color: light gray;
+       color: black;
+       font-weight: bold;
+    }
+    
+    .row4::after {
+       content: "Tori W.";
+       background-color: light gray;
+       color: black;
+       font-weight: bold;
+    }
   </head>
   
   <body>
@@ -29,28 +63,35 @@
                                        donate and spread the word!</p>
     </section>
     <!-It's us->
-    <section class="w3-row-padding w3-center w3-light blue">
-         <article clas="w3-third">
-                                 <p>Tori</p>
-                                 <img src="2 - Tori Watson Gold Award (1).jpg" alt="Tori W" style="width:100%">
-                                  <p>Coordinator</p>
-         </article>
-         <article clas="w3-third">
-                                 <p>Khalien</p>
-                                 <img src="khailen.jpg" alt="Khalien C" style="width:100%">
-                                  <p>Programmer</p>
-         </article>
-         <article clas="w3-third">
-                                 <p>Angelica</p>
-                                 <img src="Angelica.jpg" alt="Angelica T" style="width:100%">
-                                  <p>Researcher</p>
-         </article>                                                                      
-         <article clas="w3-third">
-                                 <p>Taylor</p>
-                                 <img src="Taylor.jpg" alt="Taylor W" style="width:100%">
-                                  <p>Spokesperson</p>
-         </article>
-                                                                                        </section>
+    <div class="row1">
+         <div class="column">
+               <p>Tori</p>
+                    <img src="images/2 - Tori Watson Gold Award (1).jpg" alt="Tori W" style="width:100%">
+                         <p>Coordinator</p>
+         </div>
+    </div>
+    <div class="row2">
+         <div class="column">
+                <p>Khalien</p>
+                     <img src="images/khailen.jpg" alt="Khalien C" style="width:100%">
+                         <p>Programmer</p>
+         </div>
+    </div>
+                                                                                     
+   <div class="row3">                                                     
+         <div class="column">
+                <p>Angelica</p>
+                    <img src="images/Angelica.jpg" alt="Angelica T" style="width:100%">
+                         <p>Researcher</p>
+         </div>
+    </div>
+    <div class="row4">
+         <div class="column">
+                 <p>Taylor</p>
+                     <img src="images/Taylor.jpg" alt="Taylor W" style="width:100%">
+                         <p>Spokesperson</p>
+          </div>
+     </div>
       
        <! -- Footer>
             <footer class="w3-container w3-padding-664 s3-center w3-black w3-xlarge">
