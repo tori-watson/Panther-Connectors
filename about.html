@@ -18,30 +18,36 @@
   </nav>
     .column{
       float: left;
-      position: relative;
-       left: 0;
-       width: 33.3%;
-       
+      width: 33.33%;
+      padding: 5px;
     }
+  
+    .column img{
+      width: 50%;
+  }
     
-    .row1 {
-       position: static;
-      left: 0;
+    .row1::after {
+       content: "";
+       clear: both;
+       display: table;
     }
     
     .row2 {
-       position: static;
-      left: 0;
+       content: "";
+       clear: both;
+       display: table;
     }
     
     .row3{
-       position: static;
-      left: 0;
+       content: "";
+       clear: both;
+       display: table;
     }
     
     .row4{
-       position: static;
-      left: 0;
+       content: "";
+       clear: both;
+       display: table;
     }
   </head>
     </style>
@@ -68,42 +74,49 @@
                                        donate and spread the word!</p>
     </section>
     <!-It's us->
-    <div class="w3-container s3-paddin-64 w3-center" id=team">
+    <div class="w3-container s3-padding-64 w3-center" id=team">
       <h2>The Team</h2>
       <p>Prairie View A&M Students</p>
     </div><br>
     
     <div class="row1">
-      <img src="images/2 - Tori Watson Gold Award (1).jpg" alt="Tori W" style="width:50%" class="w3-circle w3-hover-opacity">
-         <div class="column">
-               
-               <h3>Tori</h3>
-                    
-                         <p>Coordinator/Web Designer</p>
-         </div>
+      <div class="column">
+        <img src="images/2 - Tori Watson Gold Award (1).jpg" alt="Tori W" style="width:50%" class="w3-circle w3-hover-opacity">
+      </div>
+      <div class="column">
+         <h3>Tori</h3>
+         <p>Coordinator/Web Designer</p>
+      </div>
     </div>
+    
     <div class="row2">
          <div class="column">
-                <h3>Khalien</h3>
-                     <img src="images/khailen.JPG" alt="Khalien C" style="width:50%" class="w3-circle w3-hover-opacity">
-                         <p>Web Designer/Support</p>
+              <img src="images/khailen.JPG" alt="Khalien C" style="width:50%" class="w3-circle w3-hover-opacity">
+         </div>
+         <div class="column">
+           <h3>Khalien</h3>              
+           <p>Web Designer/Support</p>
          </div>
     </div>
                                                                                      
    <div class="row3">                                                     
-         <div class="column">
-                <h3>Angelica</h3>
-                    <img src="images/Angelica.JPG" alt="Angelica T" style="width:50%" class="w3-circle w3-hover-opacity">
-                         <p>Researcher/Writer/Programmer</p>
-         </div>
-    </div>
-    <div class="row4">
-         <div class="column">
-                 <h3>Taylor</h3>
-                     <img src="images/Taylor.JPG" alt="Taylor W" style="width:50%" class="w3-circle w3-hover-opacity">
-                         <p>Spokesperson/Writer</p>
-          </div>
-     </div>
+        <div class="column">
+           <img src="images/Angelica.JPG" alt="Angelica T" style="width:50%" class="w3-circle w3-hover-opacity">
+        </div>
+        <div class="column">
+          <h3>Angelica</h3>
+          <p>Researcher/Writer/Programmer</p>
+        </div>
+   </div>
+   <div class="row4">
+        <div class="column">
+             <img src="images/Taylor.JPG" alt="Taylor W" style="width:50%" class="w3-circle w3-hover-opacity">
+        </div>
+        <div class="column">
+          <h3>Taylor</h3>
+          <p>Spokesperson/Writer</p>
+        </div>
+   </div>
       
        <! -- Footer>
             <footer class="w3-container w3-padding-664 s3-center w3-black w3-xlarge">
