@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://snakegamehtml.angelicatatum.repl.co/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	<title>Snake Game</title>
+  <style type="text/css">.cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {cursor: url("data:image/png;base64,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") 1 3 , auto !important; }.cc_pointer,[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon { cursor: url("data:image/png;base64,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") 1 3, auto !important; } </style></head>
+
+  <body data-new-gr-c-s-check-loaded="14.992.0" data-gr-ext-installed="">
+
+    <div id="score">10</div>
+    <canvas id="snakeboard" width="400" height="360"></canvas>
+
+    <style>
+      #snakeboard {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #score {
+        text-align: center;
+        font-size: 90px;
+      }
+    </style>
+  
+
+  <script>
+    const board_border = 'black';
+    const board_background = "black";
+    const snake_col = 'lightblue';
+    const snake_border = 'darkblue';
+    
+    let snake = [
+      {x: 200, y: 200},
+      {x: 190, y: 200},
+      {x: 180, y: 200},
+      {x: 170, y: 200},
+      {x: 160, y: 200}
+    ]
+
+    let score = 0;
+    // True if changing direction
+    let changing_direction = false;
+    // Horizontal velocity
+    let food_x;
+    let food_y;
+    let dx = 10;
+    // Vertical velocity
+    let dy = 0;
+    
+    
+    // Get the canvas element
+    const snakeboard = document.getElementById("snakeboard");
+    // Return a two dimensional drawing context
+    const snakeboard_ctx = snakeboard.getContext("2d");
+    // Start game
+    main();
+
+    gen_food();
+
+    document.addEventListener("keydown", change_direction);
+    
+    // main function called repeatedly to keep the game running
+    function main() {
+
+        if (has_game_ended()) return;
+
+        changing_direction = false;
+        setTimeout(function onTick() {
+        clear_board();
+        drawFood();
+        move_snake();
+        drawSnake();
+        // Repeat
+        main();
+      }, 100)
+    }
+    
+    // draw a border around the canvas
+    function clear_board() {
+      //  Select the colour to fill the drawing
+      snakeboard_ctx.fillStyle = board_background;
+      //  Select the colour for the border of the canvas
+      snakeboard_ctx.strokestyle = board_border;
+      // Draw a "filled" rectangle to cover the entire canvas
+      snakeboard_ctx.fillRect(0, 0, snakeboard.width, snakeboard.height);
+      // Draw a "border" around the entire canvas
+      snakeboard_ctx.strokeRect(0, 0, snakeboard.width, snakeboard.height);
+    }
+    
+    // Draw the snake on the canvas
+    function drawSnake() {
+      // Draw each part
+      snake.forEach(drawSnakePart)
+    }
+
+    function drawFood() {
+      snakeboard_ctx.fillStyle = 'lightgreen';
+      snakeboard_ctx.strokestyle = 'darkgreen';
+      snakeboard_ctx.fillRect(food_x, food_y, 10, 10);
+      snakeboard_ctx.strokeRect(food_x, food_y, 10, 10);
+    }
+    
+    // Draw one snake part
+    function drawSnakePart(snakePart) {
+
+      // Set the colour of the snake part
+      snakeboard_ctx.fillStyle = snake_col;
+      // Set the border colour of the snake part
+      snakeboard_ctx.strokestyle = snake_border;
+      // Draw a "filled" rectangle to represent the snake part at the coordinates
+      // the part is located
+      snakeboard_ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
+      // Draw a border around the snake part
+      snakeboard_ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
+    }
+
+    function has_game_ended() {
+      for (let i = 4; i < snake.length; i++) {
+        if (snake[i].x === snake[0].x && snake[i].y === snake[0].y) return true
+      }
+      const hitLeftWall = snake[0].x < 0;
+      const hitRightWall = snake[0].x > snakeboard.width - 10;
+      const hitToptWall = snake[0].y < 0;
+      const hitBottomWall = snake[0].y > snakeboard.height - 10;
+      return hitLeftWall || hitRightWall || hitToptWall || hitBottomWall
+    }
+
+    function random_food(min, max) {
+      return Math.round((Math.random() * (max-min) + min) / 10) * 10;
+    }
+
+    function gen_food() {
+      // Generate a random number the food x-coordinate
+      food_x = random_food(0, snakeboard.width - 10);
+      // Generate a random number for the food y-coordinate
+      food_y = random_food(0, snakeboard.height - 10);
+      // if the new food location is where the snake currently is, generate a new food location
+      snake.forEach(function has_snake_eaten_food(part) {
+        const has_eaten = part.x == food_x && part.y == food_y;
+        if (has_eaten) gen_food();
+      });
+    }
+
+    function change_direction(event) {
+      const LEFT_KEY = 37;
+      const RIGHT_KEY = 39;
+      const UP_KEY = 38;
+      const DOWN_KEY = 40;
+      
+    // Prevent the snake from reversing
+    
+      if (changing_direction) return;
+      changing_direction = true;
+      const keyPressed = event.keyCode;
+      const goingUp = dy === -10;
+      const goingDown = dy === 10;
+      const goingRight = dx === 10;
+      const goingLeft = dx === -10;
+      if (keyPressed === LEFT_KEY && !goingRight) {
+        dx = -10;
+        dy = 0;
+      }
+      if (keyPressed === UP_KEY && !goingDown) {
+        dx = 0;
+        dy = -10;
+      }
+      if (keyPressed === RIGHT_KEY && !goingLeft) {
+        dx = 10;
+        dy = 0;
+      }
+      if (keyPressed === DOWN_KEY && !goingUp) {
+        dx = 0;
+        dy = 10;
+      }
+    }
+
+    function move_snake() {
+      // Create the new Snake's head
+      const head = {x: snake[0].x + dx, y: snake[0].y + dy};
+      // Add the new head to the beginning of snake body
+      snake.unshift(head);
+      const has_eaten_food = snake[0].x === food_x && snake[0].y === food_y;
+      if (has_eaten_food) {
+        // Increase score
+        score += 10;
+        // Display score on screen
+        document.getElementById('score').innerHTML = score;
+        // Generate new food location
+        gen_food();
+      } else {
+        // Remove the last part of snake body
+        snake.pop();
+      }
+    }
+    
+  </script>
+</body></html>
