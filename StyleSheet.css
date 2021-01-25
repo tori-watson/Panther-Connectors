@@ -3,14 +3,9 @@ body h3 {
   margin-right: 1em;
 }
 
-/*.logo {
-	text-indent: -999999px;
-	background: url('images/LogoNew.png');
-	width: 1482px;
-	height: 443px;
-	margin: 0px;
-	padding-top: 25px;
-}*/
+header img{
+	width: 100%;
+}
 
 .center {
 	display: block;
