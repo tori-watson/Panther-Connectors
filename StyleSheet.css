@@ -6,8 +6,9 @@ body h3 {
 .logo {
 	text-indent: -999999px;
 	background: url('images/LogoNew.png');
-	width: 1500px;
-	height: 500px;
+	width: 1482px;
+	height: 443px;
+	text-align: center;
 }
 
 .center {
