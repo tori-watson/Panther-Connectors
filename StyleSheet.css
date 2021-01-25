@@ -8,7 +8,8 @@ body h3 {
 	background: url('images/LogoNew.png');
 	width: 1482px;
 	height: 443px;
-	text-align: center;
+	margin: 0px;
+	padding-top: 25px;
 }
 
 .center {
