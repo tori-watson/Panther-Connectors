@@ -3,6 +3,10 @@ body h3 {
   margin-right: 1em;
 }
 
+.logo{
+	text-indent: -99999999px;
+	background: url('images/Logo.png');
+}
 .center {
 	display: block;
 	margin-left:auto;
